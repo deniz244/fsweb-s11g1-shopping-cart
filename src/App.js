@@ -20,6 +20,11 @@ function App() {
     setCart([...cart, item]);
   };
 
+  /*const removeItem = (item) => {
+    // verilen itemi sepete ekleyin
+    setCart([...cart, item]);
+  };*/
+
   return (
     <ProductContext.Provider value={{ products, addItem }}>
       <CartContext.Provider value={{ cart }}>
